@@ -3,134 +3,80 @@
 @section('style')
 <style>
 
-                /* GLOBAL STYLES
-            -------------------------------------------------- */
-            /* Padding below the footer and lighter body text */
+    body {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        color: #5a5a5a;
+    }
 
-            body {
-            padding-top: 3rem;
-            padding-bottom: 3rem;
-            color: #5a5a5a;
-            }
+    .carousel {
+        margin-bottom: 4rem;
+    }
+    /* Since positioning the image, we need to help out the caption */
+    .carousel-caption {
+        bottom: 3rem;
+        z-index: 10;
+    }
 
-
-            /* CUSTOMIZE THE CAROUSEL
-            -------------------------------------------------- */
-
-            /* Carousel base class */
-            .carousel {
-            margin-bottom: 4rem;
-            }
-            /* Since positioning the image, we need to help out the caption */
-            .carousel-caption {
-            bottom: 3rem;
-            z-index: 10;
-            }
-
-            /* Declare heights because of positioning of img element */
-            .carousel-item {
-            height: 32rem;
-            }
-            .carousel-item > img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            min-width: 100%;
-            height: 32rem;
-            }
-
-
-            /* MARKETING CONTENT
-            -------------------------------------------------- */
-
-            /* Center align the text within the three columns below the carousel */
-            .marketing .col-lg-4 {
-            margin-bottom: 1.5rem;
-            text-align: center;
-            }
-            .marketing h2 {
-            font-weight: 400;
-            }
-            /* rtl:begin:ignore */
-            .marketing .col-lg-4 p {
-            margin-right: .75rem;
-            margin-left: .75rem;
-            }
-            /* rtl:end:ignore */
-
-
-            /* Featurettes
-            ------------------------- */
-
-            .featurette-divider {
-            margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-            }
-
-            /* Thin out the marketing headings */
-            .featurette-heading {
-            font-weight: 300;
-            line-height: 1;
-            /* rtl:remove */
-            letter-spacing: -.05rem;
-            }
-
+    /* Declare heights because of positioning of img element */
+    .carousel-item {
+        height: 32rem;
+    }
+    .carousel-item > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        height: 32rem;
+    }
 
             /* RESPONSIVE CSS
             -------------------------------------------------- */
 
-            @media (min-width: 40em) {
-            /* Bump up size of carousel content */
-            .carousel-caption p {
+    @media (min-width: 40em) {
+        /* Bump up size of carousel content */
+        .carousel-caption p {
             margin-bottom: 1.25rem;
             font-size: 1.25rem;
             line-height: 1.4;
-            }
+        }
+    }
 
-            .featurette-heading {
-            font-size: 50px;
-            }
-            }
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
 
-            @media (min-width: 62em) {
-            .featurette-heading {
-            margin-top: 7rem;
-            }
-            }
-                .bd-placeholder-img {
-                    font-size: 1.125rem;
-                    text-anchor: middle;
-                    -webkit-user-select: none;
-                    -moz-user-select: none;
-                    user-select: none;
-                }
-
-                @media (min-width: 768px) {
-                    .bd-placeholder-img-lg {
-                    font-size: 3.5rem;
-                    }
-                }
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+        }
+    }
 
 
-                .b-divider {
-                    height: .6rem;
-                    width: 80px;
-                    background-color: rgba(243, 146, 0, 1);
-                    border: solid rgba(0, 0, 0, .15);
-                    border-width: 1px 0;
-                    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-                }
+    .b-divider {
+        height: .6rem;
+        width: 80px;
+        background-color: rgba(243, 146, 0, 1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
 
-                .filtre-carousel {
-                    filter: brightness(20%);
-                    height: 70%;
-                }
+    .filtre-carousel {
+        filter: brightness(20%);
+        height: 70%;
+    }
 </style>
 <style>
    span {
        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
    }
    .filter-carousel {
-       filter: brightness(20%);
+       filter: brightness(70%);
    }
 </style>
 @endsection
@@ -150,7 +96,7 @@
         <div class="container">
           <div class="carousel-caption text-start">
             <h1>Trois raison.</h1>
-            <p><a class="btn btn-lg bg-yes-o" href="#">Télécharger</a></p>
+            <p><a class="btn btn-lg bg-yes-o" target="_blank" href="https://play.google.com/store/apps/details?id=com.yesivoire.terminus">Télécharger</a></p>
           </div>
         </div>
       </div>
@@ -160,7 +106,7 @@
           <div class="carousel-caption">
             <h1>01</h1>
             <p>Utiliser Terminus pour éviter les déplacememnt unitils</p>
-            <p><a class="btn btn-lg bg-yes-o" href="#">Télécharger</a></p>
+            <p><a class="btn btn-lg bg-yes-o" target="_blank" href="https://play.google.com/store/apps/details?id=com.yesivoire.terminus">Télécharger</a></p>
           </div>
         </div>
       </div>
@@ -170,7 +116,7 @@
           <div class="carousel-caption text-end">
             <h1>02</h1>
             <p>Utiliser Terminus pour avoir les arrêts à proximité</p>
-            <p><a class="btn btn-lg bg-yes-o" href="#">Télécharger</a></p>
+            <p><a class="btn btn-lg bg-yes-o" target="_blank" href="https://play.google.com/store/apps/details?id=com.yesivoire.terminus">Télécharger</a></p>
           </div>
         </div>
       </div>
@@ -180,7 +126,7 @@
           <div class="carousel-caption text-end">
             <h1>03</h1>
             <p>Utiliser Terminus pour rechercher les arrêts et les bus à emprunter</p>
-            <p><a class="btn btn-lg bg-yes-o" href="#">Télécharger</a></p>
+            <p><a class="btn btn-lg bg-yes-o" target="_blank" href="https://play.google.com/store/apps/details?id=com.yesivoire.terminus">Télécharger</a></p>
           </div>
         </div>
       </div>
@@ -197,12 +143,12 @@
 
 
 <div class="container">
-    <div class="position-relative p-4 mb-5">
+    <div class="position-relative p-4 mb-5 d-none d-lg-block d-xl-none">
         <h2 class="position-absolute top-25 start-50">A propos de <span>YES IVOIRE</span></h2>
         <div class="b-divider position-absolute top-100 start-50 mt-3"></div>
     </div>
     <div class="row">
-        <div class="col-6 position-relative">
+        <div class="col-12 col-md-6 position-relative">
             <div class="position-absolute top-50 start-50 translate-middle">
                 <div class="text-center">
                     <span>YES IVOIRE</span> est une structure ivoirienne spécialisé dans le domaine informatique.
@@ -210,7 +156,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-6 d-sm-block">
+        <div class="col-12 col-md-6 d-sm-block">
             <img src="{{ asset('assets/logo.jpg') }}" class="figure-img img-fluid rounded" alt="...">
         </div>
     </div>

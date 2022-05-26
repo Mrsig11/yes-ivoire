@@ -12,9 +12,8 @@
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <h5 class="card-title text-center">03 Raison pour utilser Terminus</h5>
+                      <p class="card-text"></p>
                     </div>
                   </div>
                 </div>
@@ -25,9 +24,10 @@
                 <div class="row g-0">
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <h5 class="card-title text-center">
+                        <a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#cross"/></svg></a>
+                      </h5>
+                      <p class="card-text text-center">Eviter tout déplacement unitil pour vous gagner du temps.</p>
                     </div>
                   </div>
                   <div class="col-md-4">
@@ -44,9 +44,10 @@
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <h5 class="card-title text-right">
+                        <a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#localisation"/></svg></a>
+                        </h5>
+                      <p class="card-text text-right">Trouver tout les arrêts en un clic</p>
                     </div>
                   </div>
                 </div>
@@ -57,9 +58,11 @@
                 <div class="row g-0">
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <h5 class="card-title text-center">
+                        <a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#trajet"/></svg></a>
+                      </h5>
+                      <p class="card-text">Voir le trajet de tout vos moyen de transport favoris</p>
+                      <p class="card-text"><small class="text-muted">Et ça en un clin d'oeil</small></p>
                     </div>
                   </div>
                   <div class="col-md-4">

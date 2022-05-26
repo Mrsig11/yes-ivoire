@@ -40,7 +40,7 @@
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea class="form-control" id="message" name="message" rows="3">Slaiur</textarea>
+                    <textarea class="form-control" id="message" name="message" rows="3"></textarea>
                 </div>
                 <div class="form-check">
                     <input type="checkbox" checked class="form-check-input" name="abonner" id="abonner">

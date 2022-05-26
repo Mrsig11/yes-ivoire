@@ -8,10 +8,18 @@
     <link rel="stylesheet" href="./static/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 
-    @yield('style')
-
-
     <style>
+        html{
+            height: 100%;
+        }
+        body{
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        footer{
+            margin-top: auto;
+        }
         .b-divider {
             height: .6rem;
             width: 80px;
@@ -22,9 +30,11 @@
         }
         .bg-yes-o {
             background-color: #f39200;
-
         }
     </style>
+
+    @yield('style')
+
 </head>
 <body>
 
@@ -50,10 +60,16 @@
         <symbol id="tel" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
         </symbol>
+        <symbol id="cross" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+        </symbol>
+        <symbol id="trajet" viewBox="0 0 16 16">
+            <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001"/>
+        </symbol>
     </svg>
 
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-yes-o" style="height: 80px;">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-yes-o">
           <div class="container">
             <a class="navbar-brand" href="#">Yes Ivoire</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,6 +98,7 @@
 
     <main>
         @yield('content')
+
     </main>
 
     <footer class="py-5 bg-yes-o">
@@ -94,7 +111,7 @@
                         </div>
                         <div class="col-8">
                             <span>YES IVOIRE</span> est une structure ivoirienne spécialisé dans le domaine informatique.
-                    Créer par un groupe d'etudiant, <span>YES IVOIRE</span> est à votre disposition pour ltout vos besoin informatique.
+                            Créer par un groupe d'etudiant, <span>YES IVOIRE</span> est à votre disposition pour ltout vos besoin informatique.
                         </div>
                     </div>
                 </div>
