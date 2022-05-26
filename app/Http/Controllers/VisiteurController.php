@@ -18,4 +18,12 @@ class VisiteurController extends Controller
 
         return redirect()->route('index');
     }
+
+    public function new_letter(Request $request) {
+        Visiteur::create([
+            'email' => $request->email
+        ]);
+
+        return redirect()->route('index');
+    }
 }

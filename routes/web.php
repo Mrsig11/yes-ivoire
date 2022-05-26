@@ -26,3 +26,4 @@ Route::get('/contact', function() {
 
 
 Route::post('/message', 'VisiteurController@create')->name('message.a.yes');
+Route::post('/new-letter', 'VisiteurController@new_letter')->name('new-letter');

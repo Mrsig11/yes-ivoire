@@ -17,7 +17,7 @@
 
     .bgimg-1 {
         position: relative;
-        opacity: 0.65;
+        opacity: 0.75;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;

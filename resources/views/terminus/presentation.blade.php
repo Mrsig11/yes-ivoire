@@ -1,5 +1,15 @@
 @extends('layouts.app')
 
+@section('style')
+    <style>
+        button {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+@endsection
+
 @section('content')
 <div class="" style="height: 85px; width:100%"></div>
 <div class="container">
@@ -72,5 +82,8 @@
             </div>
         </div>
     </div>
+</div>
+<div class="container mb-5">
+    <button class="btn bg-yes-o" style="float: right">Télécharger</button>
 </div>
 @endsection

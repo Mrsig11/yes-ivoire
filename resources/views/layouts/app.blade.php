@@ -37,6 +37,9 @@
             margin-left: auto;
             margin-right: auto;
         }
+        .navbar-nav a:hover, .navbar-nav:focus {
+            color: #fff;
+        }
     </style>
 
     @yield('style')
@@ -84,13 +87,13 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav me-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="{{ route('index') }}">Accueil</a>
+                  <a class="nav-link active" id="accueil" aria-current="page" href="{{ route('index') }}">Accueil</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ route('terminus.presentation') }}">Produit</a>
+                  <a class="nav-link" id="produit" href="{{ route('terminus.presentation') }}">Produit</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ route('contact') }}" tabindex="-1" aria-disabled="true">Contact</a>
+                  <a class="nav-link" id="contact" href="{{ route('contact') }}" tabindex="-1" aria-disabled="true">Contact</a>
                 </li>
               </ul>
               <form class="d-flex">
@@ -131,14 +134,15 @@
                 </div>
 
                 <div class="col-12 col-md-4">
-                    <form>
-                    <h5>S'abonner à notre New Letter</h5>
-                    <p>Recevoir toute les informations sur YES IVOIRE en temps et en heure</p>
-                    <div class="d-flex w-100 gap-2">
-                        <label for="newsletter1" class="visually-hidden">Adresse email</label>
-                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                        <button class="btn btn-primary" type="button">S'abonner</button>
-                    </div>
+                    <form method="POST" action="{{ route('new-letter') }}">
+                        {{ csrf_field() }}
+                        <h5>S'abonner à notre New Letter</h5>
+                        <p>Recevoir toute les informations sur YES IVOIRE en temps et en heure</p>
+                        <div class="d-flex w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Adresse email</label>
+                            <input id="newsletter1" name="email" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="submit">S'abonner</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -155,6 +159,12 @@
     </footer>
 
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script>
+        const accueil = document.getElementById('accueil');
+        accueil.addEventListener('click', (e) => {
+            e.classList.add('active')
+        });
+    </script>
     @yield('script')
 </body>
 </html>

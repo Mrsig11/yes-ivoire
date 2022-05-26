@@ -16,9 +16,9 @@ class CreateVisiteursTable extends Migration
         Schema::create('visiteurs', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('email');
-            $table->text('message');
+            $table->text('message')->nullable();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('abonner');
+            $table->string('abonner')->nullable();
             $table->timestamps();
         });
     }
