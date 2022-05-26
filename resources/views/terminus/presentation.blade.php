@@ -84,6 +84,6 @@
     </div>
 </div>
 <div class="container mb-5">
-    <button class="btn bg-yes-o" style="float: right">Télécharger</button>
+    <button class="btn bg-yes-o" style="float: right"><a href="https://play.google.com/store/apps/details?id=com.yesivoire.terminus" target="_blank" rel="noopener noreferrer">Télécharger</a></button>
 </div>
 @endsection
