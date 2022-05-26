@@ -151,12 +151,35 @@
         <div class="col-12 col-md-6 d-sm-block">
             <img src="{{ asset('assets/logo.jpg') }}" class="figure-img img-fluid rounded" alt="...">
         </div>
+
         <div class="col-12 col-md-6 position-relative d-none d-md-block d-lg-none">
             <div class="position-absolute top-50 start-50 translate-middle">
                 <div class="text-center">
                     <span>YES IVOIRE</span> est une structure ivoirienne spécialisé dans le domaine informatique.
                     Créer par un groupe d'etudiant, <span>YES IVOIRE</span> est à votre disposition pour ltout vos besoin informatique.
                 </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 position-relative d-none d-xl-block d-xxl-none">
+            <div class="position-absolute top-50 start-50 translate-middle">
+                <div class="text-center">
+                    <span>YES IVOIRE</span> est une structure ivoirienne spécialisé dans le domaine informatique.
+                    Créer par un groupe d'etudiant, <span>YES IVOIRE</span> est à votre disposition pour ltout vos besoin informatique.
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 position-relative d-none d-lg-block d-xl-none">
+            <div class="position-absolute top-50 start-50 translate-middle">
+                <div class="text-center">
+                    <span>YES IVOIRE</span> est une structure ivoirienne spécialisé dans le domaine informatique.
+                    Créer par un groupe d'etudiant, <span>YES IVOIRE</span> est à votre disposition pour ltout vos besoin informatique.
+                </div>
+            </div>
+        </div>
+        <div class="col-12 d-none d-sm-block d-md-none">
+            <div class="text-center">
+                <span>YES IVOIRE</span> est une structure ivoirienne spécialisé dans le domaine informatique.
+                Créer par un groupe d'etudiant, <span>YES IVOIRE</span> est à votre disposition pour ltout vos besoin informatique.
             </div>
         </div>
         <div class="col-12 col-md-6 d-block d-sm-none mb-3 mt-0">

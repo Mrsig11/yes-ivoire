@@ -3,6 +3,17 @@
 @section('style')
 
 <style>
+    .figure-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     .bgimg-1 {
         position: relative;
@@ -35,11 +46,36 @@
         <div class="b-divider position-absolute top-100 start-50 mt-3"></div>
     </div>
     <div class="row">
-        <div class="col-6 d-sm-block">
+        <div class="col-12 col-md-6 d-sm-block">
             <div class="figure-img img-fluid rounded"></div>
             <img src="{{ asset('assets/logo.jpg') }}" class="figure-img img-fluid rounded" alt="...">
         </div>
-        <div class="col-6 position-relative">
+
+        <div class="col-12 col-md-6 position-relative d-none d-md-block d-lg-none">
+            <div class="position-absolute top-50 start-50 translate-middle">
+                <div class="">
+                    <p>
+                        <a class="link-dark" href="mailto:yesivoire@gmail.com">
+                            <svg class="bi" width="24" height="24"><use xlink:href="#mail"/></svg>
+                            yesivoire@gmail.com
+                        </a>
+                    </p>
+                    <p>
+                        <a class="link-dark" href="#">
+                            <svg class="bi" width="24" height="24"><use xlink:href="#localisation"/></svg>
+                            Abidjan TreichVille
+                        </a>
+                    </p>
+                    <p>
+                        <a class="link-dark" href="tel:+2250575773403">
+                            <svg class="bi" width="24" height="24"><use xlink:href="#tel"/></svg>
+                            0575773403
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 position-relative d-none d-xl-block d-xxl-none">
             <div class="position-absolute top-50 start-50 translate-middle">
                 <div class="">
                     <p>
@@ -53,6 +89,43 @@
                         0575773403</p>
                 </div>
             </div>
+        </div>
+        <div class="col-12 col-md-6 position-relative d-none d-lg-block d-xl-none">
+            <div class="position-absolute top-50 start-50 translate-middle">
+                <div class="">
+                    <p>
+                        <a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#mail"/></svg></a>
+                        yesivoire@gmail.com</p>
+                    <p>
+                        <a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#localisation"/></svg></a>
+                        Abidjan TreichVille</p>
+                    <p>
+                        <a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#tel"/></svg></a>
+                        0575773403</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 d-none d-sm-block d-md-none contact">
+            <p>
+                <a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#mail"/></svg></a>
+                yesivoire@gmail.com</p>
+            <p>
+                <a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#localisation"/></svg></a>
+                Abidjan TreichVille</p>
+            <p>
+                <a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#tel"/></svg></a>
+                0575773403</p>
+        </div>
+        <div class="col-12 col-md-6 d-block d-sm-none contact">
+            <p>
+                <a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#mail"/></svg></a>
+                yesivoire@gmail.com</p>
+            <p>
+                <a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#localisation"/></svg></a>
+                Abidjan TreichVille</p>
+            <p>
+                <a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#tel"/></svg></a>
+                0575773403</p>
         </div>
     </div>
 </div>
