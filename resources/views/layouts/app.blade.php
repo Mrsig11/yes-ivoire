@@ -31,6 +31,12 @@
         .bg-yes-o {
             background-color: #f39200;
         }
+        .img-logo {
+            width: 150px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 
     @yield('style')
@@ -98,7 +104,6 @@
 
     <main>
         @yield('content')
-
     </main>
 
     <footer class="py-5 bg-yes-o">
@@ -106,10 +111,10 @@
             <div class="row">
                 <div class="col-12 col-md-6">
                     <div class="row">
-                        <div class="col-4">
-                            <img src="{{ asset('assets/logo.jpg') }}" alt="" width="150" height="150">
+                        <div class="col-12 col-md-4">
+                            <img src="{{ asset('assets/logo.jpg') }}" class="img-logo" alt="" width="150" height="auto">
                         </div>
-                        <div class="col-8">
+                        <div class="col-12 col-md-8">
                             <span>YES IVOIRE</span> est une structure ivoirienne spécialisé dans le domaine informatique.
                             Créer par un groupe d'etudiant, <span>YES IVOIRE</span> est à votre disposition pour ltout vos besoin informatique.
                         </div>
@@ -143,7 +148,7 @@
                 <ul class="list-unstyled d-flex">
                     <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
                     <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="https://www.facebook.com/Yesivoire/" target="_blanck"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
                 </ul>
             </div>
         </div>
