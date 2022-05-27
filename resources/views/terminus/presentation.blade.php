@@ -37,7 +37,7 @@
                       <h5 class="card-title text-center">
                         <a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#cross"/></svg></a>
                       </h5>
-                      <p class="card-text text-center">Eviter tout déplacement inutile pour vous gagner du temps.</p>
+                      <p class="card-text text-center">Eviter tout déplacement inutile pour gagner du temps.</p>
                     </div>
                   </div>
                   <div class="col-md-4">
