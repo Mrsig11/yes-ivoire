@@ -12,6 +12,29 @@
     .carousel {
         margin-bottom: 4rem;
     }
+
+    .present-0 {
+        background: url("{{ asset('assets/present-0.jpg') }}");
+    }
+
+    .present-1 {
+        background: url("{{ asset('assets/present-1.jpg') }}");
+    }
+
+    .present-2 {
+        background: url("{{ asset('assets/present-2.jpg') }}");
+    }
+
+    .present-3 {
+        background: url("{{ asset('assets/present-3.jpg') }}");
+    }
+    .present-0, .present-1, .present-2, .present-3 {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100%;
+    }
+
     /* Since positioning the image, we need to help out the caption */
     .carousel-caption {
         bottom: 3rem;
@@ -92,7 +115,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="{{ asset('assets/present-0.jpg') }}" class="filter-carousel" alt="">
+          <div class="filter-carousel present-0"></div>
         <div class="container">
           <div class="carousel-caption text-start">
             <h1>Trois raison.</h1>
@@ -101,7 +124,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="{{ asset('assets/present-1.jpg') }}" class="filter-carousel" alt="">
+        <div class="filter-carousel present-1"></div>
         <div class="container">
           <div class="carousel-caption">
             <h1>01</h1>
@@ -111,7 +134,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="{{ asset('assets/present-2.jpg') }}" class="filter-carousel" alt="">
+        <div class="filter-carousel present-2"></div>
         <div class="container">
           <div class="carousel-caption text-end">
             <h1>02</h1>
@@ -121,7 +144,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="{{ asset('assets/present-3.jpg') }}" class="filter-carousel" alt="">
+        <div class="filter-carousel present-3"></div>
         <div class="container">
           <div class="carousel-caption text-end">
             <h1>03</h1>

@@ -22,7 +22,7 @@
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title text-center">03 Raison pour utilser Terminus</h5>
+                      <h5 class="card-title text-center">03 Raisons pour utiliser Terminus</h5>
                       <p class="card-text"></p>
                     </div>
                   </div>
@@ -37,7 +37,7 @@
                       <h5 class="card-title text-center">
                         <a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#cross"/></svg></a>
                       </h5>
-                      <p class="card-text text-center">Eviter tout déplacement unitil pour vous gagner du temps.</p>
+                      <p class="card-text text-center">Eviter tout déplacement inutile pour vous gagner du temps.</p>
                     </div>
                   </div>
                   <div class="col-md-4">

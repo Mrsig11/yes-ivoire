@@ -118,8 +118,8 @@
                             <img src="{{ asset('assets/logo.jpg') }}" class="img-logo" alt="" width="150" height="auto">
                         </div>
                         <div class="col-12 col-md-8">
-                            <span>YES IVOIRE</span> est une structure ivoirienne spécialisé dans le domaine informatique.
-                            Créer par un groupe d'etudiant, <span>YES IVOIRE</span> est à votre disposition pour ltout vos besoin informatique.
+                            <span>YES IVOIRE</span> est une structure ivoirienne spécialisée dans le domaine informatique.
+                            Créez par un groupe d'etudiant, <span>YES IVOIRE</span> est à votre disposition pour tout vos besoins informatique.
                         </div>
                     </div>
                 </div>
@@ -137,7 +137,7 @@
                     <form method="POST" action="{{ route('new-letter') }}">
                         {{ csrf_field() }}
                         <h5>S'abonner à notre New Letter</h5>
-                        <p>Recevoir toute les informations sur YES IVOIRE en temps et en heure</p>
+                        <p>Recevez toutes les actualités sur YES IVOIRE</p>
                         <div class="d-flex w-100 gap-2">
                             <label for="newsletter1" class="visually-hidden">Adresse email</label>
                             <input id="newsletter1" name="email" type="text" class="form-control" placeholder="Email address">
