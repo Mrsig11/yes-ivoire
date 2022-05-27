@@ -9,6 +9,9 @@ class VisiteurController extends Controller
 {
     public function create(Request $request)
     {
+        $data = request()->validate([
+            'email' => ['required', 'email']
+        ]);
 
         Visiteur::create([
             'email' => $request->email,
